@@ -174,7 +174,7 @@ The design document did not have any large changes over the course of the year. 
 \includepdf[pages=-]{Aerolyzer_TechReview_Original.pdf}
  
 \subsection{Tech Review Changes} 
-We changed one technology change throughout the course of the year. The change we made was using SOLR instead of MySQL for our database. We decided to make this change after the scope of our project changed and SOLR fit our database criteria better than MySQL did. SOLR had much better scalability compared to MySQL. SOLR is also completely open source and is part of the Apache brand.
+We changed two technologies throughout the course of the year. One of these changes was to use Apache Solr instead of MySQL for our database. We decided to make this change after the scope of our project changed and Solr fit our database criteria better than MySQL did. Solr had much better scalability compared to MySQL. Solr is also completely open source and is part of the Apache brand. The other technology we changed was the use of DropzoneJS for uploading files. After beginning the web framework implementation with Django, we discovered that Django offers a simple file upload that would make it easier to add files directly to our app's file system. We also realized that we would probably not need to make use of DropzoneJS's drag-and-drop upload feature, as our main focus was creating a mobile webapp - mobile devices typically do not allow for drag-and-drop file system uploads.
  
  
 \section{Weekly Blog Posts} 
@@ -195,7 +195,7 @@ As a group, we aren't sure whether we are able to make the Github repo public an
  
 \paragraph{Sophia}
  
-This week, we will be continually doing research on our assigned topics. I am working on getting acquainted with Rust. We will be meeting with our TA on Monday to check in on our project progress.
+This week, we will be continually doing research on our assigned topics. I am working on getting acquainted with Dust. We will be meeting with our TA on Monday to check in on our project progress.
  
  
 On 10/14 we met with out client Kim Whitehall and Lewis McGibbney. On 10/9 Dr. Whitehall sent us numerous resources to research during the week. I did a lot of research on the Aerosol Content and Rust. This week we also wrote and all signed our problem statement. The problem statement summarized what us and our clients expectations were for this senior capstone project. All of the parties signed the statement. We also set up this github page and will started updating the WIKI page.
@@ -432,7 +432,7 @@ For the upcoming week, we plan to finish our design document which is due Friday
 This week, we met with our client and discussed our plan for the upcoming term. Using our Gantt chart from last term as a guide, the team will begin image scraping and designing our web interface this week. Though we will work together to accomplish these tasks, I will specifically focus on image scraping while Sophia and Jesse will focus on the wireframe prototype for our app.
  
  
-Over winter break, I updated our tech review and design to reflect our choice of Solr for our data storage rather than MySQL. Our client mentioned that scalability will be our most important database criteria, and adding this criteria revealed that Solr would be a better option than MySQL or MongoDB. We will therefore implement our database with Solr going forward.
+Over winter break, I updated our tech review and design to reflect our choice of Apache Solr for our data storage rather than MySQL. Our client mentioned that scalability will be our most important database criteria, and adding this criteria revealed that Solr would be a better option than MySQL or MongoDB. We will therefore implement our database with Solr going forward.
  
  
 We did not encounter any problems this week.
@@ -577,7 +577,7 @@ No problems this week.
  
 \paragraph{Sophia}
  
-I will download and research how to use SOLR. I will start looking into how to make user accounts and work on login functionality.
+I will download and research how to use Apache Solr. I will start looking into how to make user accounts and work on login functionality.
  
  
 Last week Jesse and I worked on writing the psuedocode for the Python Scripts, I also went through the Django Tutorial.
@@ -610,10 +610,10 @@ We only had one week to work on the midterm progress report, slides, and video, 
  
 \paragraph{Sophia}
  
-This week Reilly and I will continue to work on integrating our backend SOLR with fronted Django to implement the login/signup functionality.
+This week Reilly and I will continue to work on integrating our backend Solr with fronted Django to implement the login/signup functionality.
  
  
-I downloaded SOLR and went through the tutorial, I am still working on learning how to create user accounts and integrate SOLR with Django using Haystack. We also completed the progress report slides, video, and paper.
+I downloaded Solr and went through the tutorial, I am still working on learning how to create user accounts and integrate Solr with Django using Haystack. We also completed the progress report slides, video, and paper.
  
  
 It was a time crunch to get all of the assignments in, next time I wish we had more than a week to get everything done.
@@ -643,13 +643,13 @@ At some point, we will need to further update our documents by reviewing our cli
  
 \paragraph{Sophia}
  
-This week Reilly and I will start learning how to use PostgreSQL with Django and SOLR. We decided to move on from using SOLR to Postgresql since Django has built in user accounts. We will be using SOLR for all of the images, EXIF Data, Weather Underground information, and aerosol data.
+This week Reilly and I will start learning how to use PostgreSQL with Django and Solr. We decided to move on from using Solr to Postgresql since Django has built in user accounts. We will be using Solr for all of the images, EXIF Data, Weather Underground information, and aerosol data.
  
  
-This week Reilly and I worked on using SOLR to get the user accounts, but we had to get the clients help with how to use Haystack.
+This week Reilly and I worked on using Solr to get the user accounts, but we had to get the clients help with how to use Haystack.
  
  
-We ran into trouble trying to integrate Solr and Django but our client helped us figure it out. We are having trouble getting SOLR up and running with django because there is not any good tutorials and resources out on the internet. We are probably going to use Postgres to make the user accounts.
+We ran into trouble trying to integrate Solr and Django but our client helped us figure it out. We are having trouble getting Solr up and running with django because there is not any good tutorials and resources out on the internet. We are probably going to use Postgres to make the user accounts.
  
 \paragraph{Jesse}
  
@@ -674,10 +674,10 @@ Since we switched from using Solr to Postgres for user account storage, it took 
  
 \paragraph{Sophia}
  
-This week, we will finish the log-out functionality and start working on using solr for the gallery and upload photo pages. Next, I will start implementing DropzoneJS for drag and drop functionality to upload photos.
+This week, we will finish the log-out functionality and start working on using Solr for the gallery and upload photo pages. Next, I will start implementing DropzoneJS for drag and drop functionality to upload photos.
  
  
-This week Reilly and I learned how to use PostgreSQL with Django and SOLR. We decided to use Postgresql since Django has built in user accounts. We set up the user account table, and we can not log in and sign up. We are still working on log-out functionality.
+This week Reilly and I learned how to use PostgreSQL with Django and Solr. We decided to use Postgresql since Django has built in user accounts. We set up the user account table, and we can not log in and sign up. We are still working on log-out functionality.
  
  
 We are a little behind since we switched what database we were using, but we will be able to get back on track after a little work.
@@ -707,13 +707,13 @@ There is definitely a learning curve for using Solr with Django still, as there 
  
 \paragraph{Sophia}
  
-This week, I will finish implementing dropzoneJS. We will also work on the progress report and our poster draft. I will also continue playing around with SOLR to try to get thing implemented before spring break.
+This week, I will finish implementing dropzoneJS. We will also work on the progress report and our poster draft. I will also continue playing around with Solr to try to get thing implemented before spring break.
  
  
-This week, we fnished the log-out functionality and started working on using solr for the gallery and upload photo pages.
+This week, we fnished the log-out functionality and started working on using Solr for the gallery and upload photo pages.
  
  
-SOLR and Django are still kind of complicated to use together, but Reilly and I are doing more research.
+Solr and Django are still kind of complicated to use together, but Reilly and I are doing more research.
  
 \paragraph{Jesse}
  
@@ -728,12 +728,12 @@ The only problem I encountered this week was learning how to create a YAML file.
 \subsubsection{Week 10}
 \paragraph{Reilly}
  
-My plans for this week include writing my individual progress report paper and working with the team to write and record our slides and presentation. I will also try to implement Pysolr within our Django views for the upload photo page, or at least complete more research on how to upload images to our Solr database using Pysolr, Django, and DropzoneJS. I would like to be able to get our upload image backend completed.
+My plans for this week include writing my individual progress report paper and working with the team to write and record our slides and presentation. I will also try to implement PySolr within our Django views for the upload photo page, or at least complete more research on how to upload images to our Solr database using PySolr, Django, and DropzoneJS. I would like to be able to get our upload image backend completed.
  
  
 This week, I finished up the integration of Solr into Django and my PR was merged. This involved tweaking the Haystack tutorial to implement our own image and gallery models in Django and indexes in Solr, as well as adding an admin-protected search page for us to use. I'll be ending the term in a good spot as far as having all of my code I was working on integrated into the master app branch.
  
-Additionally, I did some research on MISR, Pysolr, and user functionalities in Django (e.g. resetting password, deleting account that we will need to add).
+Additionally, I did some research on MISR, PySolr, and user functionalities in Django (e.g. resetting password, deleting account that we will need to add).
  
 Finally, the team worked on and completed our poster draft.
  
@@ -826,7 +826,7 @@ No significant problems were encountered this week. Moreover, since changing our
  
 For the upcoming week, I plan to continue working on integrating the pieces of our project together by addressing our client's comments for our latest PR. This will involve adding a call to exifread, creating a dictionary with GPS tags to send to the wunderground script, and deleting an image if it wasn't able to be verified/processed.
  
-I will also work with Sophia to store images in our database once all checks have passed and aerosol data was able to be captured. This will involve using Pysolr, which (from my research) should be pretty easy to implement.
+I will also work with Sophia to store images in our database once all checks have passed and aerosol data was able to be captured. This will involve using PySolr, which (from my research) should be pretty easy to implement.
  
  
 This past week, I completed my PR for upload photo functionality and integrating the pieces of our project together. This involved updating the skeleton pages for uploading photos to have functionality, editing the views and using sessions to piece each part together, and adding comments/pseudocode for how the final product would eventually work (since not all scripts have been written/tested). I also submitted our poster draft 2.
